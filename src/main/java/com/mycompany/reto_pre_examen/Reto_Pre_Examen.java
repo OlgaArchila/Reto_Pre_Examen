@@ -26,6 +26,15 @@ class FilaIndia{ //falta completar el codigo
     fila[cant] = soldado; // Guarda el soldado en la posición actual
     cant++; // Aumenta la cantidad de soldados
   }
+    public int buscar(int soldado) { // Método para buscar posición
+    for (int i = 0; i < cant; i++) { // Recorre toda la fila
+      if (fila[i] == soldado) { // Verifica si encontró el soldado
+        return i; // Retorna la posición encontrada
+      }
+    }
+    return -1; // Retorna -1 si no existe
+  }
+    
   }
 
 
