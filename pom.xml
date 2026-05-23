@@ -11,4 +11,5 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>com.mycompany.reto_pre_examen.Reto_Pre_Examen</exec.mainClass>
     </properties>
+    <name>SupervisionSoldados</name>
 </project>

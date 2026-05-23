@@ -49,10 +49,9 @@ class FilaIndia{ //falta completar el codigo
 
     System.out.println("SI."); // Muestra SI si todo está correcto
   }
-}
-
-
-    class SupervisionSoldados { // Clase principal
+}     
+    
+    public class SupervisionSoldados { // Clase principal
 	public static void main(String[] args) {// Método principal
 
 		FilaIndia filaI = new FilaIndia();// Crea objeto fila india
@@ -75,3 +74,4 @@ class FilaIndia{ //falta completar el codigo
 		filaI.revisar(comandantes, subordinados);// Llama método de revisión
 	}
 }
+
