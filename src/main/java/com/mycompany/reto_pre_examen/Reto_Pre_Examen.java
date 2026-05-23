@@ -34,11 +34,25 @@ class FilaIndia{ //falta completar el codigo
     }
     return -1; // Retorna -1 si no existe
   }
-    
+     public void revisar(int comandantes[], int subordinados[]) { // Revisa supervisión
+
+    for (int i = 0; i < comandantes.length; i++) { // Recorre parejas
+
+      int posC = buscar(comandantes[i]); // Busca posición comandante
+      int posS = buscar(subordinados[i]); // Busca posición subordinado
+
+      if (posS < posC) { // Verifica si subordinado está antes
+        System.out.println("NO. " + comandantes[i] + "-" + subordinados[i]); // Muestra error
+        return; // Termina el método inmediatamente
+      }
+    }
+
+    System.out.println("SI."); // Muestra SI si todo está correcto
   }
+}
 
 
-public class SupervisionSoldados { // Clase principal
+    class SupervisionSoldados { // Clase principal
 	public static void main(String[] args) {// Método principal
 
 		FilaIndia filaI = new FilaIndia();// Crea objeto fila india
